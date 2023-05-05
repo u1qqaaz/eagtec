@@ -24,7 +24,9 @@ const relayId = Math.floor(Math.random() * 3);
 window.eaglercraftOpts = {
 container: "game_frame", assetsURI: "assets.epk", serverWorkerURI: "worker_bootstrap.js", worldsFolder: "MAIN",
 servers: [
-	{ serverName: "OMIT", serverAddress: "ws://omit.tk", hideAddress: true }
+	{ serverName: "OMIT", serverAddress: "wss://omit.tk", hideAddress: true }
+	{ serverName: "AssPixel", serverAddress: "wss://web.asspixel.net/CAP/", hideAddress: true }
+	{ serverName: "Zentic Network", serverAddress: "wss://zentic.cc", hideAddress: true }
 ],
 relays: [
 	{ addr: "wss://relay.deev.is/", name: "lax1dude relay #1", primary: relayId == 0 },
